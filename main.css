@@ -1,3 +1,79 @@
-h1{
-    color:red;
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background: url('images/intro.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 54px;
+    text-align: center;
+}
+
+/* h3 {
+    position: absolute;
+    bottom: 0;
+    font-size:25px;
+    margin-top: 5px;
+    margin-bottom: 0;
+} */
+
+.container {
+    display: flex;
+    min-width: 300px;
+    min-height: 350px;
+    /* min-width: 350px; */
+    margin: 50px 25px 100px;
+    background: rgba(255,255,255,0.6);
+    padding: 20px 40px 40px;
+    border-radius: 35px;
+}
+
+header{
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    margin-top:10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 120px;
+    border: .5px solid #BECECF;
+    border-radius: 12px;
+}
+
+
+quiz-form{
+    height: 120px;
+    box-sizing: border-box;
+}
+
+input{
+    margin: 8px;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom: 5px;
+    padding-top:15px;
+    padding-bottom: 5px;
+}
+
+button:focus {
+  color: red;
+}
+
+@media only screen and (max-width: 365px) {
+
+    .question{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        flex-grow: 1;
+    }
 }
